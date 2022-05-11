@@ -38,11 +38,13 @@ body{
     border: 1px solid #fff;
     height: 30px;
 }
-.header_contacts p{
+.header_contacts a{
     font-size: 26px;
     color: #5d5d5d;
     font-weight: 500;
     font-family: "Ubuntu";
+    text-decoration: none;
+    margin: 25px 0;
 }
 .contacts a{
     margin-left: 40px;
