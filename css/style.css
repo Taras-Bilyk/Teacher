@@ -24,7 +24,10 @@ body{
     font-family: "Roboto";
     text-decoration: none;
     text-transform: uppercase;
-    padding-right: 40px;
+    margin-right: 40px;
+}
+.header_menu a:hover{
+    text-decoration: underline;
 }
 .header_menu_flex,
 .flex_between{
@@ -49,6 +52,10 @@ body{
 .contacts a{
     margin-left: 40px;
 }
+.contacts a:hover{
+    color: #3f83bc;
+    text-decoration: underline;
+}
 .contacts_ul{
     padding: 15px 0;
 }
@@ -60,6 +67,7 @@ body{
     text-decoration: none;
 }
 .background_image{
+    background-color: #666c6d;
     background: url(../images/background-image.png) no-repeat center/cover;
 }
 .background_image p:first-child{
@@ -97,6 +105,9 @@ body{
     border-radius: 3px;
     padding: 10px 30px;
 }
+.background_image a:hover{
+    background-color: #313131;
+}
 .main .first_p{
     font-size: 20px;
     color: #000;
@@ -129,11 +140,47 @@ body{
     max-width: 690px;
     margin: 0 auto;
 }
+.uslugi_flex a{
+    width: 500px;
+    text-decoration: none;
+}
+.uslugi_flex a:hover h2{
+    text-decoration: underline;
+}
+.uslugi_flex a:hover .col1 p:first-child{
+    background-position: 0 -112px;
+}
+.uslugi_flex a:hover .col2 p:first-child{
+    background-position: -114px -112px;
+}
+.uslugi_flex a:hover .col3 p:first-child{
+    background-position: -227px -112px;
+}
 .col1,
 .col2,
 .col3{
     text-align: center;
     max-width: 300px;
+}
+.col1 p:first-child,
+.col2 p:first-child,
+.col3 p:first-child{
+    width: 110px;
+    margin-bottom: 0;
+    margin-left: 55px;
+    margin-top: -5px;
+}
+.col1 p:first-child{
+    background: url(../images/sprite2.png) no-repeat;
+    background-position: 0 10px;
+}
+.col2 p:first-child{
+    background: url(../images/sprite2.png) no-repeat;
+    background-position: -114px 10px;
+}
+.col3 p:first-child{
+    background: url(../images/sprite2.png) no-repeat;
+    background-position: -227px 10px;
 }
 .col1 h2,
 .col2 h2,
@@ -145,7 +192,7 @@ body{
     font-weight: 400;
     font-family: "Roboto";
 }
-.col1 p,
+.col1 p:last-child,
 .col2 p,
 .col3 p{
     font-size: 14px;
@@ -185,7 +232,7 @@ body{
     text-decoration: none;
     margin: 0 4px;
 }
-.portfolio_a a:first-child{
+.portfolio_a a:hover{
     background-color: #439eea;
     color: #fff;
 }
@@ -193,7 +240,8 @@ body{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
+    overflow: scroll;
+    /* overflow: hidden; */
     margin-top: 50px;
     margin-bottom: 25px;
 }
@@ -214,6 +262,10 @@ body{
     border-radius: 3px;
     background-color: #f7f7f7;
 }
+.see_all a:hover{
+    background-color: #439eea;
+    color: #fff;
+}
 .see_all{
     text-align: center;
     margin-bottom: 60px;
@@ -228,7 +280,6 @@ body{
     font-weight: 400;
     font-family: "Roboto Slab";
     padding-top: 60px;
-    margin-bottom: 60px;
 }
 .ellipse_photos{
     text-align: center;
@@ -245,8 +296,10 @@ body{
     background-color: #f7f7f7;
     margin: 0 auto;
     max-width: 630px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
 }
-.text p{
+.otzivi .text p{
     font-size: 13px;
     line-height: 18px;
     color: #000;
@@ -258,7 +311,7 @@ body{
     padding-bottom: 20px;
     margin-bottom: 25px;
 }
-.otzivi p:last-child{
+.otzivi p{
     font-size: 14px;
     line-height: 18px;
     color: #000;
@@ -268,6 +321,38 @@ body{
     text-align: center;
     padding-bottom: 60px;
     margin-bottom: 0;
+}
+.ellipse_photos a:first-child{
+    background: url(../images/before.png) no-repeat;
+    width: 0px;
+    padding-right: 0;
+    padding-left: 20px;
+    display: inline-block;
+    padding-top: 55px;
+    margin-right: 20px;
+}
+.ellipse_photos a:last-child{
+    background: url(../images/after.png) no-repeat;
+    width: 0px;
+    padding-left: 0;
+    padding-left: 20px;
+    display: inline-block;
+    padding-top: 55px;
+    margin-left: 20px;
+}
+.otzivi .a{
+    background: url(../images/ellipse_sprite.png) no-repeat;
+    background-position: 0 0;
+    width: 50px;
+    padding-left: 20px;
+    padding-right: 1px;
+    padding-bottom: 72px;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.otzivi .a:hover{
+    background-position: -1px -91px;
 }
 .help{
     background-color: #439eea;
@@ -305,6 +390,9 @@ body{
     display: inline-block;
     margin-bottom: 60px;
 }
+.help a:hover{
+    background-color: #313131;
+}
 .footer_background_color{
     background-color: #313131;
 }
@@ -329,7 +417,76 @@ body{
     font-weight: 400;
     font-family: "Roboto";
     text-decoration: none;
+}
+.footer_col p{
     padding-bottom: 47px;
+}
+.footer_col3 li:first-child>a:before{
+    content: "";
+    background: url(../images/sprite2.png);
+    background-position: 0 -258px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.footer_col3 li:nth-child(2)>a:before{
+    content: "";
+    background: url(../images/sprite2.png);
+    background-position: 0 -280px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.footer_col3 li:nth-child(3)>a:before{
+    content: "";
+    background: url(../images/sprite2.png);
+    background-position: 0 -100px;
+    margin-right: 20px;
+}
+.footer_col3 li:last-child>a:before{
+    content: "";
+    background: url(../images/sprite2.png);
+    background-position: 0 -238px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.footer_col3 li>a:hover{
+    color: #3f83bc;
+    text-decoration: underline;
+}
+.footer_col3 .f_wk{
+    background: url(../images/sprite2.png) no-repeat;
+    background-position: -28px -246px;
+    padding: 20px;
+    display: inline-block;
+}
+.footer_col3 .f_f{
+    background: url(../images/sprite2.png) no-repeat;
+    background-position: -67px -246px;
+    padding: 20px;
+    display: inline-block;
+}
+.footer_col3 .f_tw{
+    background: url(../images/sprite2.png) no-repeat;
+    background-position: -107px -246px;
+    padding: 20px;
+    display: inline-block;
+}
+.footer_col3 .f_g{
+    background: url(../images/sprite2.png) no-repeat;
+    background-position: -147px -246px;
+    padding: 20px;
+    display: inline-block;
+}
+.footer_col3 .f_wk:hover{
+    background-position: -28px -295px;
+}
+.footer_col3 .f_f:hover{
+    background-position: -67px -295px;
+}
+.footer_col3 .f_tw:hover{
+    background-position: -106px -295px;
+}
+.footer_col3 .f_g:hover{
+    background-position: -146px -295px;
 }
 .recent_photos{
     display: flex;
