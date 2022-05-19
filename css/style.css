@@ -21,7 +21,7 @@ body{
     font-size: 13px;
     color: #fff;
     font-weight: 500;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 40px;
@@ -40,6 +40,20 @@ body{
     color: #fff;
     border: 1px solid #fff;
     height: 30px;
+    padding-left: 10px;
+    outline: none;
+    position: relative;
+    padding-right: 30px;
+}
+.input:focus{
+    box-shadow: 0 0 5px rgba(225, 225, 225, 1);
+}
+.input_a{
+    position: absolute;
+    background: url(../images/search.png), no-repeat;
+    padding: 6px;
+    top: 20px;
+    right: 105px;
 }
 .header_contacts a{
     font-size: 26px;
@@ -63,7 +77,7 @@ body{
     font-size: 13px;
     color: #000;
     font-weight: 400;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
 }
 .background_image{
@@ -83,7 +97,7 @@ body{
     line-height: 24px;
     color: #fcfcfc;
     font-weight: 300;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     text-align: center;
     margin: 30px 0;
     margin-top: 0;
@@ -95,9 +109,9 @@ body{
     text-align: center;
     font-size: 14px;
     letter-spacing: 0px;
-    color: #ffffff;
+    color: #fff;
     font-weight: 500;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     border: 1px solid #439eea;
@@ -106,7 +120,11 @@ body{
     padding: 10px 30px;
 }
 .background_image a:hover{
-    background-color: #313131;
+    color: #439eea;
+    background-color: #f7f7f7;
+}
+.about_teacher{
+    text-align: center;
 }
 .main .first_p{
     font-size: 20px;
@@ -114,19 +132,36 @@ body{
     font-weight: 400;
     font-family: "Roboto Slab";
     text-align: center;
-    margin: 60px 0;
+    padding: 30px 0;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+.main .first_p:before{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #bfbfbf;
+    width: 60px;
+    height: 1px;
+    left: 15px;
+    bottom: 8px;
 }
 .about_teacher p{
     font-size: 14px;
     line-height: 21px;
     color: #000;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     text-align: center;
     margin-bottom: 60px;
 }
 .uslugi{
     background-color: #f2f2f2;
+    text-align: center;
+}
+.wrapper .y:before{
+    left: 10px;
+    bottom: 30px;
 }
 .uslugi p:first-child{
     font-size: 20px;
@@ -190,7 +225,7 @@ body{
     line-height: 21px;
     color: #000;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
 }
 .col1 p:last-child,
 .col2 p,
@@ -200,13 +235,23 @@ body{
     color: #000;
     font-weight: 300;
     font-style: italic;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     text-align: center;
     margin-top: 20px;
     padding-bottom: 46px;
 }
 .col3 p{
     padding-top: 20px;
+}
+.portfolio{
+    text-align: center;
+}
+#p:before{
+    left: 30px;
+    bottom: 0px;
+}
+#p{
+    margin: 30px 0;
 }
 .portfolio p{
     text-align: center;
@@ -215,7 +260,8 @@ body{
     font-weight: 400;
     font-family: "Roboto Slab";
     margin-top: 60px;
-    margin-bottom: 65px;
+    margin-bottom: 100px;
+    display: inline-block;
 }
 .portfolio_a{
     text-align: center;
@@ -225,12 +271,13 @@ body{
     padding: 10px 25px;
     border-radius: 3px;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     background-color: #f7f7f7;
     color: #000;
     text-decoration: none;
     margin: 0 4px;
+    display: inline-block;
 }
 .portfolio_a a:hover{
     background-color: #439eea;
@@ -242,7 +289,7 @@ body{
     justify-content: space-between;
     overflow: scroll;
     /* overflow: hidden; */
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 25px;
 }
 .photos img{
@@ -255,12 +302,13 @@ body{
     font-size: 13px;
     color: #000;
     font-weight: 500;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     text-decoration: none;
     border: 1px solid #e6e6e6;
     padding: 10px 25px;
     border-radius: 3px;
     background-color: #f7f7f7;
+    text-transform: uppercase;
 }
 .see_all a:hover{
     background-color: #439eea;
@@ -272,6 +320,11 @@ body{
 }
 .otzivi{
     background-color: #f2f2f2;
+    text-align: center;
+}
+#o:before{
+    left: 60px;
+    bottom: 30px;
 }
 .otzivi>div>p:first-child{
     text-align: center;
@@ -280,13 +333,12 @@ body{
     font-weight: 400;
     font-family: "Roboto Slab";
     padding-top: 60px;
+    font-style: normal;
+    padding-bottom: 60px;
 }
 .ellipse_photos{
     text-align: center;
     margin-bottom: 30px;
-}
-.ellipse_photos img{
-    margin: 0 10px;
 }
 .ellipse_photos img:first-child,
 .ellipse_photos img:last-child{
@@ -296,8 +348,22 @@ body{
     background-color: #f7f7f7;
     margin: 0 auto;
     max-width: 630px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e6e6e6;
     border-radius: 3px;
+    position: relative;
+}
+.text:before{
+    content: "";
+    position: absolute;
+    border: 1px solid transparent;
+    background-color: #f7f7f7;
+    border-top-color: #e6e6e6;
+    border-right-color: #e6e6e6;
+    transform: rotate(-45deg);
+    width: 15px;
+    height: 15px;
+    left: 42%;
+    top: -9px;
 }
 .otzivi .text p{
     font-size: 13px;
@@ -305,7 +371,7 @@ body{
     color: #000;
     font-weight: 300;
     font-style: italic;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     text-align: center;
     padding-top: 17px;
     padding-bottom: 20px;
@@ -317,7 +383,7 @@ body{
     color: #000;
     font-weight: 400;
     font-style: italic;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     text-align: center;
     padding-bottom: 60px;
     margin-bottom: 0;
@@ -330,6 +396,11 @@ body{
     display: inline-block;
     padding-top: 55px;
     margin-right: 20px;
+    filter: contrast(50%);
+}
+.ellipse_photos a:first-child:hover,
+.ellipse_photos a:last-child:hover{
+    filter: contrast(100%);
 }
 .ellipse_photos a:last-child{
     background: url(../images/after.png) no-repeat;
@@ -339,9 +410,10 @@ body{
     display: inline-block;
     padding-top: 55px;
     margin-left: 20px;
+    filter: contrast(50%);
 }
 .otzivi .a{
-    background: url(../images/ellipse_sprite.png) no-repeat;
+    background: url(../images/ellipse2.png) no-repeat;
     background-position: 0 0;
     width: 50px;
     padding-left: 20px;
@@ -350,13 +422,28 @@ body{
     margin-right: 5px;
     margin-left: 5px;
     display: inline-block;
+    filter: grayscale(100%);
+    transition: 0.3s all ease;
 }
 .otzivi .a:hover{
-    background-position: -1px -91px;
+    filter: grayscale(0%);
 }
 .help{
     background-color: #439eea;
     text-align: center;
+}
+.help_first_p{
+    display: inline-block;
+    position: relative;
+}
+.help_first_p:before{
+    content: "";
+    position: absolute;
+    border-top: 1px solid #6fb3ec;
+    width: 100px;
+    height: 1px;
+    left: 30px;
+    bottom: 10px;
 }
 .help p:first-child{
     font-size: 20px;
@@ -373,7 +460,7 @@ body{
     line-height: 21px;
     color: #fff;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     margin-bottom: 35px;
 }
 .help a{
@@ -381,7 +468,7 @@ body{
     line-height: 19px;
     color: #fff;
     font-weight: 500;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     border:  2px solid #fff;
@@ -391,7 +478,8 @@ body{
     margin-bottom: 60px;
 }
 .help a:hover{
-    background-color: #313131;
+    background-color: #f7f7f7;
+    color: #439eea;
 }
 .footer_background_color{
     background-color: #313131;
@@ -405,7 +493,7 @@ body{
     font-size: 14px;
     color: #989898;
     font-weight: 700;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     padding-top: 46px;
     padding-bottom: 36px;
 }
@@ -415,7 +503,7 @@ body{
     line-height: 19px;
     color: #5a5a5a;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     text-decoration: none;
 }
 .footer_col p{
@@ -493,8 +581,16 @@ body{
     flex-wrap: wrap;
     max-width: 300px;
 }
-.recent_photos img{
+.recent_photos a{
     margin: 7.5px;
+
+}
+.recent_photos img{
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+.recent_photos img:hover{
+    filter: grayscale(0%);
 }
 .footer_col3 li{
     list-style: none;
@@ -512,8 +608,8 @@ body{
     line-height: 18px;
     color: #000;
     font-weight: 400;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 21px;
 }
