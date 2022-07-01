@@ -979,9 +979,9 @@ span{
         margin-bottom: 0;
     }
 }
-@media screen and (max-width: 767px){
-    .contacts_ul{
-        padding-right: 30px;
+@media screen and (max-width: 351px){
+    .contacts_ul a{
+        margin-right: 12%;
     }
 }
 @media screen and (max-width: 463px){
@@ -1031,5 +1031,10 @@ span{
     .recent_photos img,
     .recent_photos a{
         width: 70vW;
+    }
+}
+@media screen and (max-width: 651px){
+    .contacts_ul a{
+        margin-bottom: 5px;
     }
 }
