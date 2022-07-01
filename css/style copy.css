@@ -148,9 +148,9 @@ body{
     bottom: 0;
     display: none;
 }
-/* .header_menu a:hover:before{
+.header_menu a:hover:before{
     display: block;
-} */
+}
 .header_menu_flex,
 .flex_between{
     display: flex;
@@ -448,7 +448,6 @@ body{
 }
 .portfolio_a{
     text-align: center;
-    margin: 0 20px;
 }
 .portfolio_a a{
     border: 1px solid #e6e6e6;
@@ -679,10 +678,6 @@ body{
 .footer_cols{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-.footer_col{
-    margin: 0 10px;
 }
 .footer_col p:first-child{
     text-transform: uppercase;
@@ -820,216 +815,4 @@ body{
     margin: 0;
     padding-top: 12px;
     padding-bottom: 17px;
-}
-
-.div{
-    position: relative;
-    padding-right: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    display: none;
-}
-span{
-    position: absolute;
-}
-.span1{
-    background-color: #fff;
-    top: 0;
-    width: 20px;
-    height: 2px;
-    transition: 0.3s all ease;
-}
-.span2{
-    background-color: #fff;
-    width: 20px;
-    height: 2px;
-    top: 7px;
-}
-.span3{
-    background-color: #fff;
-    width: 20px;
-    height: 2px;
-    top: 14px;
-    transition: 0.3s all ease;
-
-}
-
-
-
-
-
-
-.div2 .span1{
-    transform: rotate(45deg);
-    top: 9px;
-}
-.div2 .span2{
-    display: none;
-}
-.div2 .span3{
-    transform: rotate(-45deg);
-    top: 9px;
-}
-.search{
-    max-width: 50vw;
-}
-.footer_col1{
-    max-width: 300px;
-}
-
-@media screen and (max-width: 1000px){
-    .wrapper{
-        padding: 0 20px;
-    }
-}
-@media screen and (max-width: 803px){
-    .header_menu_flex{
-        display: none;
-    }
-    .div{
-        display: block;
-    }
-    .wrapper .p2{
-        display: block;
-        position: absolute;
-        top: 45px;
-        background-color: #333;
-        z-index: 2;
-        width: 100vw;
-        left: 0px;
-    }
-    .wrapper .p2 a{
-        margin-left: 20px;
-        padding-right: 50px;
-        display: inline-block;
-    }
-}
-@media screen and (min-width: 803px){
-    .header_menu a:hover::before {
-        display: block;
-    }
-}
-@media screen and (max-width: 767px){
-    .header_contacts_flex,
-    .contacts_ul{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .contacts_ul a{
-        display: inline-block;
-    }
-    .wrapper .teacher{
-        margin-bottom: 0;
-    }
-}
-@media screen and (max-width: 351px){
-    .contacts_ul li{
-        display: block;
-        width: 100vw;
-        text-align: center;
-    }
-    .contacts_ul a{
-        /* margin-left: 30%; */
-        margin-top: 0;
-        margin-bottom: 15px;
-    }
-}
-@media screen and (max-width: 780px){
-    .col3{
-        display: none;
-    }
-    .col3_a{
-        display: none;
-    }
-    .uslugi_flex{
-        justify-content: center;
-    }
-    .wrapper .col1_a,
-    .wrapper .col2_a,
-    .wrapper .col1,
-    .wrapper .col2{
-        width: 200px;
-    }
-    .wrapper .col1_a,
-    .wrapper .col2_a{
-        margin: 0 20px;
-    }
-}
-@media screen and (max-width: 594px){
-    .col2{
-        display: none;
-    }
-    .col2_a{
-        display: none;
-    }
-}
-@media screen and (max-width: 380px){
-    .pointer1{
-        left: 20px;
-    }
-    .pointer2{
-        right: 20px;
-    }
-}
-@media screen and (max-width: 439px){
-    .portfolio_a a{
-        margin-bottom: 10px;
-    }
-    .portfolio_a a:last-child{
-        margin-bottom: 0;
-    }
-}
-@media screen and (max-width: 767px){
-    .contacts_ul{
-        padding-right: 30px;
-    }
-}
-@media screen and (max-width: 463px){
-    .ellipse_photos a:nth-child(5){
-        display: none;
-    }
-}
-@media screen and (max-width: 379px){
-    .ellipse_photos a:nth-child(4){
-        display: none;
-    }
-}
-@media screen and (max-width: 293px){
-    .ellipse_photos a:nth-child(3){
-        display: none;
-    }
-}
-@media screen and (max-width: 889px){
-    .footer_cols{
-        justify-content: center;
-        text-align: center;
-    }
-    .footer_col1{
-        max-width: 100vW;
-    }
-    .footer_col2 p:first-child,
-    .footer_col3 p:first-child{
-        padding-top: 0;
-    }
-    .footer_col2,
-    .footer_col3{
-        margin: 0 50px;
-        margin-bottom: 40px;
-    }
-    .recent_photos{
-        justify-content: center;
-    }
-}
-@media screen and (max-width: 718px){
-    .footer_col2,
-    .footer_col3{
-        margin: 0 20px;
-        margin-bottom: 40px;
-    }
-}
-@media screen and (max-width: 329px){
-    .recent_photos img,
-    .recent_photos a{
-        width: 70vW;
-    }
 }
