@@ -5,3 +5,4 @@ hamburger.onclick = function(){
   menu.classList.toggle("p2")
   hamburger.classList.toggle("div2")
 }
+
